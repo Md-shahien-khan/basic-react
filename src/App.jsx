@@ -10,7 +10,13 @@ function App() {
     status : "active"
   });
   const [selectedProducts, setSelectedProducts] = useState([]);
+  // price
+  const [price, setPrice] = useState(500);
 
+  // increase price
+  const handleIncreasePrice = (pr) =>{
+    setPrice(price + pr);
+  }
   // handle selected
   const handleSelectedProduct = (product) =>{
     // find exist product
@@ -19,6 +25,7 @@ function App() {
       alert('exists already. u cant add');
     }
     else{
+      handleIncreasePrice(product.price);
       // merging all product
     const newProducts = [...selectedProducts, product];
     setSelectedProducts(newProducts);
@@ -49,17 +56,24 @@ function App() {
   // console.log(isActive);
 
 
+  const handleDeletePrice = (id) =>{
+    const product = selectedProducts.find((p) => p.id == id);
+    setPrice(price - product.price);
+  }
+
   // handle Delete
   const handleDelete = (id) =>{
+    handleDeletePrice(id)
     const remainingProduct = selectedProducts.filter((p) => p.id != id);
     setSelectedProducts(remainingProduct);
   }
 
+  
 
 
   return (
     <>
-    <Navbar selectedProducts={selectedProducts}></Navbar>
+    <Navbar price={price} selectedProducts={selectedProducts}></Navbar>
     <div className='flex'>
     <AllProducts handleSelectedProduct={handleSelectedProduct}></AllProducts>
     <CartContainer handleDelete={handleDelete} selectedProducts={selectedProducts} isActive={isActive} handleIsActive={handleIsActive}></CartContainer>

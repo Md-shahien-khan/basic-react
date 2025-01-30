@@ -1,5 +1,5 @@
 import '../../App'
-const Navbar = ({selectedProducts}) => {
+const Navbar = ({selectedProducts, price}) => {
     return (
         <div style={{display : 'flex', justifyContent : 'space-around'}}>
             <div>
@@ -9,7 +9,7 @@ const Navbar = ({selectedProducts}) => {
                 <li className="item">Home</li>
                 <li className="item">product</li>
                 <li className="item">cart {selectedProducts.length}</li>
-                <li className="item">$500</li>
+                <li className="item">${price}</li>
             </div>
         </div>
     );
