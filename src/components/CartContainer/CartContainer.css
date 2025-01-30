@@ -1,0 +1,11 @@
+.active{
+    background-color: rgb(114, 143, 224);
+}
+.about{
+    background-color: pink;
+}
+.btn{
+    padding: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}

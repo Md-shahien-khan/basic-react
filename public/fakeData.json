@@ -1,0 +1,59 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Complete Python Bootcamp",
+        "img": "https://ibb.co/qFcnt5r",
+        "description": "Learn Python from scratch, including data structures, OOP, and web development.",
+        "price": 49.99,
+        "category": "Programming",
+        "isFeature": true
+      },
+      {
+        "id": 2,
+        "name": "Mastering Digital Marketing",
+        "img": "https://ibb.co/N96W9dR",
+        "description": "Gain expert-level knowledge in SEO, SEM, social media, and content marketing.",
+        "price": 79.99,
+        "category": "Marketing",
+        "isFeature": false
+      },
+      {
+        "id": 3,
+        "name": "UI/UX Design for Beginners",
+        "img": "https://ibb.co/z5pYFWr",
+        "description": "A comprehensive introduction to user interface and user experience design principles.",
+        "price": 59.99,
+        "category": "Design",
+        "isFeature": true
+      },
+      {
+        "id": 4,
+        "name": "Data Science with R",
+        "img": "https://ibb.co/MNJVDL8",
+        "description": "Dive deep into data science concepts, including machine learning and data visualization using R.",
+        "price": 89.99,
+        "category": "Data Science",
+        "isFeature": false
+      },
+      {
+        "id": 5,
+        "name": "Web Development Bootcamp",
+        "img": "https://ibb.co/n6tpHbw",
+        "description": "Learn full-stack web development with HTML, CSS, JavaScript, Node.js, and React.",
+        "price": 99.99,
+        "category": "Web Development",
+        "isFeature": true
+      },
+      {
+        "id": 6,
+        "name": "Introduction to Machine Learning",
+        "img": "https://ibb.co/x6t5x0Q",
+        "description": "Explore the basics of machine learning, including algorithms, regression, and classification.",
+        "price": 79.99,
+        "category": "Machine Learning",
+        "isFeature": false
+      }
+    ]
+  }
+  
